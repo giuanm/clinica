@@ -1,0 +1,113 @@
+/*
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+body{
+  font-family: 'Jost', sans-serif;
+}
+nav{
+  z-index: 10001 !important;
+
+}
+.gradientBg{
+  background: linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%);
+}
+.btnPrimary{
+  @apply py-3 px-8 bg-secondary font-semibold text-white rounded
+  hover:bg-primary transition-all duration-300
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: 'Jost', sans-serif;
+}
+nav{
+    z-index: 10001 !important;
+
+}
+.gradientBg{
+    background: linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%);
+}
+.btnPrimary{
+    @apply py-3 px-8 bg-secondary font-semibold text-white rounded
+    hover:bg-primary transition-all duration-300
+}
+.btn2{
+  @apply ml-4 px-4 py-2 bg-secondary font-semibold text-white rounded
+  hover:bg-primary transition-all duration-300
+}
+.btn3{
+  @apply ml-4 px-4 py-2 bg-primary font-semibold text-white rounded
+  hover:bg-secondary transition-all duration-300
+}
+.page {
+  margin: 0 4px; /* Espacio entre los números de página */
+  padding: 6px 10px; /* Padding para hacer los números de página clicables más grandes */
+  border: 1px solid #ccc; /* Borde para los números de página */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre los números de página */
+}
+
+.page.active {
+  @apply ml-4 px-4 py-2 bg-secondary font-semibold text-white rounded
+  hover:bg-primary transition-all duration-300/* Color de texto para la página activa */
+}
+.historial-item {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem; /* Espaciado entre cada historial */
+}
+
+.historial-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+.historial-item p {
+  text-align: justify;
+  text-justify: inter-word; /* Esto asegura que el espaciado entre palabras sea uniforme */
+  margin-bottom: 0.25rem;
+}

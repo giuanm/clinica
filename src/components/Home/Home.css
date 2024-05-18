@@ -1,0 +1,25 @@
+.carouselContainer{
+    height: 50vh;
+    margin-bottom: 20px;
+}
+.carouselContainer img{
+	max-width: 50vh;
+    min-width: 50vh;
+}
+.home_text{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home_text h1{
+    color: var(--mainColor);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.home_text p{
+    font-size: 1.5rem;
+    color: var(--secondaryColor);
+}

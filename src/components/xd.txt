@@ -1,0 +1,29 @@
+name: CI/CD Workflow
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14' # Puedes especificar la versión de Node.js que necesitas
+    - name: Install dependencies
+      run: npm install
+    - name: Run tests
+      run: npm test
+    - name: Build
+      run: npm run build
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy to server
+      run: rsync -avz ./dist/ yourserver:/path/to/deploy
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}

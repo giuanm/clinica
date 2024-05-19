@@ -20,8 +20,8 @@ const Princing = () => {
                 <div className="mt-16">
                     <label htmlFor="toggle" className="inline-flex items-center cursor-pointer">
                         <span className="mr-8 text-2xl font-semibold">Avaliação Inicial</span>
-                        <div className="w-14 h-6 bg-gray-300 rounded-full transition duration-200 ease-in-out">
-                            <div className={`w-6 h-6 rounded-full transition duration-200 ease-in-out ${isYearly ? "bg-primary ml-8" : "bg-gray-500"}`}>
+                        <div className="w-14 h-6 bg-gray-300 rounded-full transition duration-100 ease-in-out">
+                            <div className={`w-6 h-6 rounded-full transition duration-100 ease-in-out ${isYearly ? "bg-primary ml-8" : "bg-gray-500"}`}>
                             </div>
                         </div>
                         <span className="ml-8 text-2xl font-semibold">Consulta Continua</span>
@@ -33,10 +33,10 @@ const Princing = () => {
             </div>
             {/*cards prices*/ }
             <motion.div 
-            variants={fadeIn('up',0.2)}
+            variants={fadeIn('up',0.1)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once:false,amount:0.5}}
+            viewport={{once:false,amount:0.1}}
             
             
             className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto'>

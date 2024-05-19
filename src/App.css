@@ -73,15 +73,15 @@ nav{
 }
 .btnPrimary{
     @apply py-3 px-8 bg-secondary font-semibold text-white rounded
-    hover:bg-primary transition-all duration-300
+    hover:bg-primary transition-all duration-100
 }
 .btn2{
   @apply ml-4 px-4 py-2 bg-secondary font-semibold text-white rounded
-  hover:bg-primary transition-all duration-300
+  hover:bg-primary transition-all duration-100
 }
 .btn3{
   @apply ml-4 px-4 py-2 bg-primary font-semibold text-white rounded
-  hover:bg-secondary transition-all duration-300
+  hover:bg-secondary transition-all duration-100
 }
 .page {
   margin: 0 4px; /* Espacio entre los números de página */
@@ -93,7 +93,7 @@ nav{
 
 .page.active {
   @apply ml-4 px-4 py-2 bg-secondary font-semibold text-white rounded
-  hover:bg-primary transition-all duration-300/* Color de texto para la página activa */
+  hover:bg-primary transition-all duration-100/* Color de texto para la página activa */
 }
 .historial-item {
   padding: 1rem;

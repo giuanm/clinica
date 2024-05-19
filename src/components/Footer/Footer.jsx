@@ -7,10 +7,10 @@ const Footer = () => {
     <div className="bg-white py-16 dark:bg-primary">
       <div className="text-center">
         <p className="text-primary font-normal text-base mb-2 dark:text-white">
-          © {currentYear} Grupo C - Taller de Software.
+          © {currentYear} Giuan.
         </p>
         <p className="text-primary font-semibold text-base dark:text-white">
-          Hecho con {"<3"}
+          Feito com {"<3"}
         </p>
       </div>
     </div>

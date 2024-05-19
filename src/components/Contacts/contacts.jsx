@@ -20,7 +20,7 @@ const Contacts = () => {
             y: 0,
             transition: {
               type: "spring",
-              bounce: 0.4,
+              bounce: 0.1,
               duration: 1,
             },
           },
@@ -61,25 +61,25 @@ const Contacts = () => {
 
         <ul className="text-base text-primary-400 list-inside list-disc dark:text-neutral-200">
           <li>
-            Telefono: 2-2250513
+            Telefone: 85-992250513
           </li>
           <li>
             Celular: 
             <ul>
               <li>
-                71265599
+                85-971265599
               </li>
               <li>
-                73722420
+                85-973722420
               </li>
             </ul>
           </li>
           <li>
-            Correo: <a href="mailto:dreduardotorrelio@gmail.com"> dreduardotorrelio@gmail.com</a>
+            Email: <a href="mailto:dreduardotorrelio@gmail.com"> dreduardotorrelio@gmail.com</a>
               
           </li>
           <li>
-            Horarios de atención:
+            Horarios de atenção:
             <ul>
               <li>
                 Lunes-Miercoles-Viernes: 8:00 - 12:00, 15:00 - 19:00

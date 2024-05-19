@@ -56,15 +56,15 @@ const Reviews = () => {
       </div>
       <div className="my-24 px-4 max-w-screen-2xl mx-auto">
       <motion.div
-        variants={fadeIn('up', 0.3)}
+        variants={fadeIn('up', 0.1)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.1 }}
         className="flex overflow-x-scroll snap-x snap-mandatory scrollbar-hide" // Utiliza Tailwind CSS para el diseño
       >
         {reviews.map((review) => (
           <motion.div key={review.id} className="snap-center shrink-0 first:pl-4 last:pr-4 mx-11">
-            <div className="bg-[rgba(255,255,255,0.04)] rounded-[35px] shadow-3xl p-8 m-2 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
+            <div className="bg-[rgba(255,255,255,0.04)] rounded-[35px] shadow-3xl p-8 m-2 hover:-translate-y-4 transition-all duration-100 cursor-pointer">
               <img src={review.image} alt="Doctor" className="w-48 h-48 object-cover rounded-t-lg mx-auto" />
               <div className="text-center">
                 <p className="text-gray-800 text-lg mt-4">{review.text}</p>

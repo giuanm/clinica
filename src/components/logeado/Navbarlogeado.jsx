@@ -19,10 +19,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   const navItems = [
-    {link: "Registrar novo paciente", path: "/registroPacientes"},
-    {link: "Listar Pacientes", path: "/pacientes"},
+    {link: "Registrar novo paciente", path: "/clinica/registroPacientes"},
+    {link: "Listar Pacientes", path: "/clinica/pacientes"},
     
-    {link: "Receitas", path: "/citas"},
+    {link: "Receitas", path: "/clinica/citas"},
   ];
 
   const toggleProfileMenu = () => {
@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className={`bg-white fixed top-0 right-0 bottom-0 w-[60vw] p-8 border-l z-20 transform transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`bg-white fixed top-0 right-0 bottom-0 w-[60vw] p-8 border-l z-20 transform transition-transform duration-100 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <button onClick={togglerMenu} className='text-primary mb-8'>
           <FaTimes className='w-8 h-8'/>
         </button>

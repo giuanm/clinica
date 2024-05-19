@@ -40,27 +40,27 @@ function App() {
     <>
       {showNavbar && (isLoggedIn ? <NavbarL /> : <Navbar />)}
       <Routes>
-        <Route path="/" element={<>
+        <Route path="/clinica" element={<>
           <Home/><Informacion/><About/><Princing/><Newsletter/><Reviews/>
           <Wrapper id="referencias" heading="Referencias" textCenter="center"><Referencias/></Wrapper>
           <Wrapper id="contacts" heading="Contactos" textCenter="center"><Contacts/></Wrapper>
         </>} />
-        <Route path="/pacientes" element={<Pacientes />} />
-        <Route path="/alergias/:idPaciente" element={<Alergias />} />
-        <Route path="/registroPacientes" element={<RegistroPacientes />} />
-        <Route path="/historialClinico" element={<HistorialClinico />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/listaHistorial/:idPaciente" element={<ListaHistorialesClinicos />} />
-        <Route path="/modificarPaciente/:idPaciente" element={<ModificarPaciente />} />
-        <Route path="/citas" element={<Citas />} />
-        <Route path="/regHistorial/:idPaciente" element={<RegHistorial />} />
-        <Route path="/regmultimedia/:idHistorial" element={<Registromultimedia />} />
-        <Route path="/historialMultimedia" element={<HistorialMultimedia />} />
-        <Route path="/multimedia/:idHistorial" element={<Multimedia />} />
-        <Route path="/regTratamiento/:historialClinicoId" element={<RegTratamiento />} />
+        <Route path="/clinica/pacientes" element={<Pacientes />} />
+        <Route path="/clinica/alergias/:idPaciente" element={<Alergias />} />
+        <Route path="/clinica/registroPacientes" element={<RegistroPacientes />} />
+        <Route path="/clinica/historialClinico" element={<HistorialClinico />} />
+        <Route path="/clinica/login" element={<Login />} />
+        <Route path="/clinica/listaHistorial/:idPaciente" element={<ListaHistorialesClinicos />} />
+        <Route path="/clinica/modificarPaciente/:idPaciente" element={<ModificarPaciente />} />
+        <Route path="/clinica/citas" element={<Citas />} />
+        <Route path="/clinica/regHistorial/:idPaciente" element={<RegHistorial />} />
+        <Route path="/clinica/regmultimedia/:idHistorial" element={<Registromultimedia />} />
+        <Route path="/clinica/historialMultimedia" element={<HistorialMultimedia />} />
+        <Route path="/clinica/multimedia/:idHistorial" element={<Multimedia />} />
+        <Route path="/clinica/regTratamiento/:historialClinicoId" element={<RegTratamiento />} />
         {/*Registrar cita */}
-        <Route path="/regCita/:idAsistenteP" element={<RegistrarCita/>} />
-        <Route path='/actualizarCita/:idCita' element={<ActualizarCita/>} />
+        <Route path="/clinica/regCita/:idAsistenteP" element={<RegistrarCita/>} />
+        <Route path='/clinica/actualizarCita/:idCita' element={<ActualizarCita/>} />
         <Route path="*" element={<div>404</div>} />
         {/* Aquí puedes agregar más rutas según sea necesario */}
       </Routes>
